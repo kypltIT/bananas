@@ -52,120 +52,807 @@
     </div>
 </div>
 <!-- /Slider -->
-<!-- category -->
-<section class="flat-spacing-9">
-    <div class="container">
-        <div class="position-relative">
-            <div class="sw-pagination-wrapper">
-                <div dir="ltr" class="swiper tf-sw-collection" data-preview="4" data-tablet="3" data-mobile="1" data-space-lg="30" data-space-md="30" data-space="15" data-loop="false" data-auto-play="false">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" lazy="true">
-                            <div class="collection-item hover-img style-2">
-                                <div class="collection-inner">
-                                    <a href="shop-collection-sub.html" class="collection-image img-style radius-10">
-                                        <img class="lazyload" data-src="images/collections/sneaker-1.jpg" src="images/collections/sneaker-1.jpg" alt="collection-img">
-                                    </a>
-                                    <div class="collection-content justify-content-end align-items-center">
-                                        <div class="bottom">
-                                            <a href="shop-collection-sub.html" class="tf-btn collection-title hover-icon btn-light fs-14 fw-7 rounded-0"><span>ALL SNEAKERS</span><i class="icon icon-arrow1-top-left"></i></a>
+
+        <!-- Sale Product -->
+        <section class="flat-spacing-26">
+            <div class="container">
+                <div class="flat-animate-tab">
+                    <ul class="widget-tab-3 d-flex justify-content-center wow fadeInUp" data-wow-delay="0s" role="tablist">
+                        <li class="nav-tab-item" role="presentation">   
+                            <a href="home-footwear.html#bestSeller" class="active" data-bs-toggle="tab">Best seller</a>
+                        </li>
+                        <li class="nav-tab-item" role="presentation">
+                            <a href="home-footwear.html#newArrivals"  data-bs-toggle="tab">New arrivals</a>
+                        </li>
+                        <li class="nav-tab-item" role="presentation">
+                            <a href="home-footwear.html#onSale" data-bs-toggle="tab">On Sale</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="bestSeller" role="tabpanel">
+                            <div class="wrap-carousel">
+                                <div dir="ltr" class="swiper tf-sw-product-sell-1" data-preview="4" data-tablet="3" data-mobile="2" data-space-lg="30" data-space-md="15" data-pagination="2" data-pagination-md="3" data-pagination-lg="3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-1.jpg" src="images/products/footwear-1.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-2.jpg" src="images/products/footwear-2.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kids Voyageur Sparrow</a>
+                                                    <span class="price">$136.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-1.jpg" src="images/products/footwear-1.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-3.jpg" src="images/products/footwear-3.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-4.jpg" src="images/products/footwear-4.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Purple</span>
+                                                            <span class="swatch-value bg_purple"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-5.jpg" src="images/products/footwear-5.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-6.jpg" src="images/products/footwear-6.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-7.jpg" src="images/products/footwear-7.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Adult Voyageur Sparrow</a>
+                                                    <span class="price">$136.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-6.jpg" src="images/products/footwear-6.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-8.jpg" src="images/products/footwear-8.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-9.jpg" src="images/products/footwear-9.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-10.jpg" src="images/products/footwear-10.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-11.jpg" src="images/products/footwear-11.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kid Breeze Sneaker</a>
+                                                    <span class="price">$109.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-10.jpg" src="images/products/footwear-10.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-12.jpg" src="images/products/footwear-12.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-13.jpg" src="images/products/footwear-13.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-14.jpg" src="images/products/footwear-14.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kids Voyageur Sneaker</a>
+                                                    <span class="price">$166.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-13.jpg" src="images/products/footwear-13.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-15.jpg" src="images/products/footwear-15.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-16.jpg" src="images/products/footwear-16.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-17.jpg" src="images/products/footwear-17.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kid Vida High Top</a>
+                                                    <span class="price">$259.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-16.jpg" src="images/products/footwear-16.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-18.jpg" src="images/products/footwear-18.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-19.jpg" src="images/products/footwear-19.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="sw-dots style-2 sw-pagination-sell-1 justify-content-center"></div>
                             </div>
                         </div>
-                        <div class="swiper-slide" lazy="true">
-                            <div class="collection-item hover-img style-2">
-                                <div class="collection-inner">
-                                    <a href="shop-collection-sub.html" class="collection-image img-style radius-10">
-                                        <img class="lazyload" data-src="images/collections/sneaker-2.jpg" src="images/collections/sneaker-2.jpg" alt="collection-img">
-                                    </a>
-                                    <div class="collection-content justify-content-end align-items-center">
-                                        <div class="bottom">
-                                            <a href="shop-collection-sub.html" class="tf-btn collection-title hover-icon btn-light fs-14 fw-7 rounded-0"><span>MEN</span><i class="icon icon-arrow1-top-left"></i></a>
+                        <div class="tab-pane" id="newArrivals" role="tabpanel">
+                            <div class="wrap-carousel">
+                                <div dir="ltr" class="swiper tf-sw-product-sell-1" data-preview="4" data-tablet="3" data-mobile="2" data-space-lg="30" data-space-md="15" data-pagination="2" data-pagination-md="3" data-pagination-lg="3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-1.jpg" src="images/products/footwear-1.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-2.jpg" src="images/products/footwear-2.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kids Voyageur Sparrow</a>
+                                                    <span class="price">$136.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-1.jpg" src="images/products/footwear-1.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-3.jpg" src="images/products/footwear-3.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-4.jpg" src="images/products/footwear-4.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Purple</span>
+                                                            <span class="swatch-value bg_purple"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-5.jpg" src="images/products/footwear-5.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-6.jpg" src="images/products/footwear-6.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-7.jpg" src="images/products/footwear-7.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Adult Voyageur Sparrow</a>
+                                                    <span class="price">$136.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-6.jpg" src="images/products/footwear-6.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-8.jpg" src="images/products/footwear-8.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-9.jpg" src="images/products/footwear-9.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-10.jpg" src="images/products/footwear-10.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-11.jpg" src="images/products/footwear-11.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kid Breeze Sneaker</a>
+                                                    <span class="price">$109.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-10.jpg" src="images/products/footwear-10.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-12.jpg" src="images/products/footwear-12.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-13.jpg" src="images/products/footwear-13.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-14.jpg" src="images/products/footwear-14.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kids Voyageur Sneaker</a>
+                                                    <span class="price">$166.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-13.jpg" src="images/products/footwear-13.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-15.jpg" src="images/products/footwear-15.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-16.jpg" src="images/products/footwear-16.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-17.jpg" src="images/products/footwear-17.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kid Vida High Top</a>
+                                                    <span class="price">$259.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-16.jpg" src="images/products/footwear-16.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-18.jpg" src="images/products/footwear-18.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-19.jpg" src="images/products/footwear-19.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="sw-dots style-2 sw-pagination-sell-1 justify-content-center"></div>
                             </div>
                         </div>
-                        <div class="swiper-slide" lazy="true">
-                            <div class="collection-item hover-img style-2">
-                                <div class="collection-inner">
-                                    <a href="shop-collection-sub.html" class="collection-image img-style radius-10">
-                                        <img class="lazyload" data-src="images/collections/sneaker-3.jpg" src="images/collections/sneaker-3.jpg" alt="collection-img">
-                                    </a>
-                                    <div class="collection-content justify-content-end align-items-center">
-                                        <div class="bottom">
-                                            <a href="shop-collection-sub.html" class="tf-btn collection-title hover-icon btn-light fs-14 fw-7 rounded-0"><span>WOMEN</span><i class="icon icon-arrow1-top-left"></i></a>
+                        <div class="tab-pane" id="onSale" role="tabpanel">
+                            <div class="wrap-carousel">
+                                <div dir="ltr" class="swiper tf-sw-product-sell-1" data-preview="4" data-tablet="3" data-mobile="2" data-space-lg="30" data-space-md="15" data-pagination="2" data-pagination-md="3" data-pagination-lg="3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-1.jpg" src="images/products/footwear-1.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-2.jpg" src="images/products/footwear-2.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kids Voyageur Sparrow</a>
+                                                    <span class="price">$136.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-1.jpg" src="images/products/footwear-1.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-3.jpg" src="images/products/footwear-3.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-4.jpg" src="images/products/footwear-4.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Purple</span>
+                                                            <span class="swatch-value bg_purple"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-5.jpg" src="images/products/footwear-5.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-6.jpg" src="images/products/footwear-6.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-7.jpg" src="images/products/footwear-7.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Adult Voyageur Sparrow</a>
+                                                    <span class="price">$136.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-6.jpg" src="images/products/footwear-6.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-8.jpg" src="images/products/footwear-8.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-9.jpg" src="images/products/footwear-9.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-10.jpg" src="images/products/footwear-10.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-11.jpg" src="images/products/footwear-11.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kid Breeze Sneaker</a>
+                                                    <span class="price">$109.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-10.jpg" src="images/products/footwear-10.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-12.jpg" src="images/products/footwear-12.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-13.jpg" src="images/products/footwear-13.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-14.jpg" src="images/products/footwear-14.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kids Voyageur Sneaker</a>
+                                                    <span class="price">$166.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-13.jpg" src="images/products/footwear-13.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-15.jpg" src="images/products/footwear-15.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-product fl-item">
+                                                <div class="card-product-wrapper aspect-1">
+                                                    <a href="product-detail.html" class="product-img">
+                                                        <img class="lazyload img-product" data-src="images/products/footwear-16.jpg" src="images/products/footwear-16.jpg" alt="image-product">
+                                                        <img class="lazyload img-hover" data-src="images/products/footwear-17.jpg" src="images/products/footwear-17.jpg" alt="image-product">
+                                                    </a>
+                                                    <div class="list-product-btn absolute-2">
+                                                        <a href="home-footwear.html#quick_add" data-bs-toggle="modal" class="box-icon bg_white quick-add tf-btn-loading">
+                                                            <span class="icon icon-bag"></span>
+                                                            <span class="tooltip">Quick Add</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                                            <span class="icon icon-heart"></span>
+                                                            <span class="tooltip">Add to Wishlist</span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="box-icon bg_white compare btn-icon-action">
+                                                            <span class="icon icon-compare"></span>
+                                                            <span class="tooltip">Add to Compare</span>
+                                                            <span class="icon icon-check"></span>
+                                                        </a>
+                                                        <a href="home-footwear.html#quick_view" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                                            <span class="icon icon-view"></span>
+                                                            <span class="tooltip">Quick View</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-product-info">
+                                                    <a href="product-detail.html" class="title link">Kid Vida High Top</a>
+                                                    <span class="price">$259.00</span>
+                                                    <ul class="list-color-product">
+                                                        <li class="list-color-item color-swatch active">
+                                                            <span class="tooltip">Pink</span>
+                                                            <span class="swatch-value bg_pink"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-16.jpg" src="images/products/footwear-16.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Grey</span>
+                                                            <span class="swatch-value bg_grey"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-18.jpg" src="images/products/footwear-18.jpg" alt="image-product">
+                                                        </li>
+                                                        <li class="list-color-item color-swatch">
+                                                            <span class="tooltip">Blue</span>
+                                                            <span class="swatch-value bg_blue-2"></span>
+                                                            <img class="lazyload" data-src="images/products/footwear-19.jpg" src="images/products/footwear-19.jpg" alt="image-product">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" lazy="true">
-                            <div class="collection-item hover-img style-2">
-                                <div class="collection-inner">
-                                    <a href="shop-collection-sub.html" class="collection-image img-style radius-10">
-                                        <img class="lazyload" data-src="images/collections/sneaker-4.jpg" src="images/collections/sneaker-4.jpg" alt="collection-img">
-                                    </a>
-                                    <div class="collection-content justify-content-end align-items-center">
-                                        <div class="bottom">
-                                            <a href="shop-collection-sub.html" class="tf-btn collection-title hover-icon btn-light fs-14 fw-7 rounded-0"><span>KID</span><i class="icon icon-arrow1-top-left"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="sw-dots style-2 sw-pagination-sell-1 justify-content-center"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="box-sw-navigation">
-                    <div class="sw-dots style-2 small sw-pagination-collection justify-content-center"></div>
-                </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- /category -->
-<!-- brand -->
-<section class="flat-spacing-9 pt_0">
-    <div class="container">
-        <div dir="ltr" class="swiper tf-sw-brand" data-loop="false" data-play="false" data-preview="6" data-tablet="3" data-mobile="2" data-space-lg="0" data-space-md="0">
-            <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="brand-item">
-                            <img class="lazyload" data-src="images/brand/brand-01.png" src="images/brand/brand-01.png" alt="image-brand">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-item">
-                            <img class="lazyload" data-src="images/brand/brand-02.png" src="images/brand/brand-02.png" alt="image-brand">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-item">
-                            <img class="lazyload" data-src="images/brand/brand-03.png" src="images/brand/brand-03.png" alt="image-brand">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-item">
-                            <img class="lazyload" data-src="images/brand/brand-04.png" src="images/brand/brand-04.png" alt="image-brand">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-item">
-                            <img class="lazyload" data-src="images/brand/brand-05.png" src="images/brand/brand-05.png" alt="image-brand">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-item">
-                            <img class="lazyload" data-src="images/brand/brand-06.png" src="images/brand/brand-06.png" alt="image-brand">
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="sw-dots style-2 sw-pagination-brand justify-content-center"></div>
-    </div>
-</section>
-<!-- /brand -->
+        </section>
+        <!-- /Sale Product -->
+
+
 <!-- Collection -->
 <section class="flat-spacing-14 pt_0">
     <div class="container">
@@ -421,118 +1108,9 @@
     </div>
 </section>
 <!-- /Banner collection -->
-<!-- lookbook -->
-<section>
-    <div class="container">
-        <div class="wrap-lookbook lookbook-sneaker">
-            <div class="image radius-10 o-hidden">
-                <img class="lazyload" data-src="images/collections/sneaker-lb.jpg" src="images/collections/sneaker-lb.jpg" alt="image-lookbook">
-            </div>
-            <div class="lookbook-item item-1">
-                <div class="inner">
-                    <div class="btn-group dropdown dropup dropdown-center">
-                        <button class="tf-pin-btn pin-black" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span></span>
-                        </button>
-                        <ul class="dropdown-menu p-0 border-0">
-                            <li>
-                                <div class="lookbook-product">
-                                    <a href="product-detail.html" class="image">
-                                        <img class="lazyload" data-src="images/products/sneaker-2.jpg" src="images/products/sneaker-2.jpg" alt="lookbook-item">
-                                    </a>
-                                    <div class="content-wrap">
-                                        <div class="product-title">
-                                            <a href="product-detail.html" class="fw-8">REGULAR FIT WINDBREAKER</a>
-                                        </div>
-                                        <div class="price">$130.00</div>
-                                    </div>
-                                    <a href="home-sneaker.html#quick_view" data-bs-toggle="modal" class=""><i class="icon-view"></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="lookbook-item item-2">
-                <div class="inner">
-                    <div class="btn-group dropdown dropup dropdown-center">
-                        <button class="tf-pin-btn pin-black" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span></span>
-                        </button>
-                        <ul class="dropdown-menu p-0 border-0">
-                            <li>
-                                <div class="lookbook-product">
-                                    <a href="product-detail.html" class="image">
-                                        <img class="lazyload" data-src="images/products/sneaker-1.png" src="images/products/sneaker-1.png" alt="">
-                                    </a>
-                                    <div class="content-wrap">
-                                        <div class="product-title">
-                                            <a href="product-detail.html" class="fw-8">POLAR NIGHT PACK 2 FUSION 2.0</a>
-                                        </div>
-                                        <div class="price">$99.00</div>
-                                    </div>
-                                    <a href="home-sneaker.html#quick_view" data-bs-toggle="modal" class=""><i class="icon-view"></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- lookbook -->
-<!-- Banner Collection -->
-<section class="flat-spacing-18">
-    <div class="container">
-        <div class="tf-grid-layout md-col-2 tf-img-with-text style-5">
-            <div class="d-flex gap-30">
-                <div class="tf-image-wrap wow fadeInUp" data-wow-delay="0s">
-                    <img class="lazyload" data-src="images/collections/banner-sneaker-1.jpg" src="images/collections/banner-sneaker-1.jpg" alt="collection-img">
-                </div> <div class="tf-image-wrap wow fadeInUp" data-wow-delay="0s">
-                    <img class="lazyload" data-src="images/collections/banner-sneaker-2.jpg" src="images/collections/banner-sneaker-2.jpg" alt="collection-img">
-                </div>
-            </div>
-            <div class="tf-content-wrap wow fadeInUp" data-wow-delay="0s">
-                <div class="sub-heading fw-7">ABOUT US</div>
-                <div class="heading fw-7 fs-42">A SERVICE-FIRST HOME FOR CONTEMPORARY STYLE</div>
-                <p class="description text_black-2 fs-16">Rooted in Amsterdam street culture we’ve always supported local initiatives, creatives and athletes from day one. Working on unique collaborations with both local and international brands and hosting regular events and parties in our shops for our community. Something we’ll continue doing wherever we go.</p>
-                <a href="shop-collection-list.html" class="tf-btn btn-line collection-other-link fw-6"><span>SHOP COLLECTION</span><i class="icon icon-arrow1-top-left"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Banner Collection -->
-<!-- Subscribe -->
-<section class="flat-spacing-24 pb_0 tf-slideshow tf-form-sneaker">
-    <div class="banner-wrapper">
-        <img class="lazyload" data-src="images/slider/bg-sneaker.jpg" src="images/slider/bg-sneaker.jpg" alt="collection-img">
-        <div class="container-full">
-            <div class="box-content bg_white">
-                <div class="flat-title text-center mb_1 wow fadeInUp" data-wow-delay="0s">
-                    <span class="title text_black fw-7">BECOME PART <br> OF THE ECOMUS DISTRICT </span>
-                    <p class="sub-title text_black">Promotions, new products and sales. Directly to your inbox.</p>
-                </div>
-                <div class="flat-subscrite-wrap">
-                    <form class="form-newsletter" id="subscribe-form" action="home-sneaker.html#" method="post" accept-charset="utf-8" data-mailchimp="true">
-                        <div id="subscribe-content" class="subscribe-content">
-                            <fieldset class="email">
-                                <input type="email" name="email-form" id="subscribe-email" placeholder="Enter email address" tabindex="0" aria-required="true">
-                            </fieldset>
-                            <div class="button-submit">
-                                <button id="subscribe-button" class="tf-btn mt-0 bg-yellow-9 text_black btn-sm animate-hover-btn text-uppercase letter-2 fw-6" type="button">Subscribe</button>
-                            </div>
-                        </div>
-                        <div id="subscribe-msg"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Subscribe -->
+
 <!-- iconbox -->
-<section class="flat-spacing-27">
+<section class="flat-spacing-0">
     <div class="container">
         <div class="flat-iconbox-v3">
             <div class="wrap-carousel wrap-mobile">
@@ -581,4 +1159,27 @@
     </div>
 </section>
 <!-- /iconbox -->
+
+<!-- Banner Collection -->
+<section class="flat-spacing-10">
+    <div class="container">
+        <div class="tf-grid-layout md-col-2 tf-img-with-text style-5">
+            <div class="d-flex gap-30">
+                <div class="tf-image-wrap wow fadeInUp" data-wow-delay="0s">
+                    <img class="lazyload" data-src="images/collections/banner-sneaker-1.jpg" src="images/collections/banner-sneaker-1.jpg" alt="collection-img">
+                </div> <div class="tf-image-wrap wow fadeInUp" data-wow-delay="0s">
+                    <img class="lazyload" data-src="images/collections/banner-sneaker-2.jpg" src="images/collections/banner-sneaker-2.jpg" alt="collection-img">
+                </div>
+            </div>
+            <div class="tf-content-wrap wow fadeInUp" data-wow-delay="0s">
+                <div class="sub-heading fw-7">ABOUT US</div>
+                <div class="heading fw-7 fs-42">A SERVICE-FIRST HOME FOR CONTEMPORARY STYLE</div>
+                <p class="description text_black-2 fs-16">Rooted in Amsterdam street culture we’ve always supported local initiatives, creatives and athletes from day one. Working on unique collaborations with both local and international brands and hosting regular events and parties in our shops for our community. Something we’ll continue doing wherever we go.</p>
+                <a href="shop-collection-list.html" class="tf-btn btn-line collection-other-link fw-6"><span>SHOP COLLECTION</span><i class="icon icon-arrow1-top-left"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Banner Collection -->
+
 @endsection

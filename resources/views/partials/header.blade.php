@@ -3,17 +3,17 @@
             <div class="px_15 lg-px_40">
                 <div class="tf-top-bar_wrap grid-3 gap-30 align-items-center">
                     <ul class="tf-top-bar_item tf-social-icon d-flex gap-10">
-                        <li><a href="home-sneaker.html#" class="box-icon w_28 round social-facebook bg_line"><i class="icon fs-12 icon-fb"></i></a></li>
+                        {{-- <li><a href="home-sneaker.html#" class="box-icon w_28 round social-facebook bg_line"><i class="icon fs-12 icon-fb"></i></a></li>
                         <li><a href="home-sneaker.html#" class="box-icon w_28 round social-twiter bg_line"><i class="icon fs-10 icon-Icon-x"></i></a></li>
                         <li><a href="home-sneaker.html#" class="box-icon w_28 round social-instagram bg_line"><i class="icon fs-12 icon-instagram"></i></a></li>
                         <li><a href="home-sneaker.html#" class="box-icon w_28 round social-tiktok bg_line"><i class="icon fs-12 icon-tiktok"></i></a></li>
-                        <li><a href="home-sneaker.html#" class="box-icon w_28 round social-pinterest bg_line"><i class="icon fs-12 icon-pinterest-1"></i></a></li>
+                        <li><a href="home-sneaker.html#" class="box-icon w_28 round social-pinterest bg_line"><i class="icon fs-12 icon-pinterest-1"></i></a></li> --}}
                     </ul>
                     <div class="text-center overflow-hidden">
                         <div dir="ltr" class="swiper tf-sw-top_bar" data-preview="1" data-space="0" data-loop="true" data-speed="1000" data-delay="2000">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <p class="top-bar-text fw-5">Spring Fashion Sale: Time to refresh your wardrobe.  <a href="shop-default.html" title="all collection" class="tf-btn btn-line">Shop now<i class="icon icon-arrow1-top-left"></i></a></p>
+                                    <p class="top-bar-text fw-5">Spring Fashion Sale: Time to refresh your wardrobe.  <a href="{{ route('shop.default') }}" title="all collection" class="tf-btn btn-line">Shop now<i class="icon icon-arrow1-top-left"></i></a></p>
                                 </div>
                                 <div class="swiper-slide">
                                     <p class="top-bar-text fw-5">Summer sale discount off 70%</p>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
 
-                    <div class="top-bar-language tf-cur justify-content-end">
+                    {{-- <div class="top-bar-language tf-cur justify-content-end">
 
 
                         <div class="tf-currencies">
@@ -45,7 +45,7 @@
                             </select>
                         </div>
                         
-                    </div>
+                    </div> --}}
             </div>
             
            
@@ -67,145 +67,10 @@
                         <nav class="box-navigation text-center">
                             <ul class="box-nav-ul d-flex align-items-center gap-40">
                                 <li class="menu-item">
-                                    <a href="home-sneaker.html#" class="item-link letter-spacing-3">Home</a>
-                                    <div class="sub-menu mega-menu">
-                                        <div class="container">
-                                            <div class="row-demo">
-                                                <div class="demo-item">
-                                                    <a href="index.html">
-                                                        <div class="demo-image position-relative">
-                                                            <img class="lazyload" data-src="images/demo/home-01.jpg" src="images/demo/home-01.jpg" alt="home-01">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                                <span>Trend</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Fashion 01</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item">
-                                                    <a href="home-multi-brand.html">
-                                                        <div class="demo-image position-relative">
-                                                            <img class="lazyload" data-src="images/demo/home-multi-brand.jpg" src="images/demo/home-multi-brand.jpg" alt="home-multi-brand">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                                <span class="demo-hot">Hot</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Multi Brand</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item">
-                                                    <a href="home-02.html">
-                                                        <div class="demo-image position-relative">
-                                                            <img class="lazyload" data-src="images/demo/home-02.jpg" src="images/demo/home-02.jpg" alt="home-02">
-                                                            <div class="demo-label">
-                                                                <span class="demo-hot">Hot</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Fashion 02</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item">
-                                                    <a href="home-03.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-03.jpg" src="images/demo/home-03.jpg" alt="home-03">
-                                                        </div>
-                                                        <span class="demo-name">Home Fashion 03</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item">
-                                                    <a href="home-04.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-04.jpg" src="images/demo/home-04.jpg" alt="home-04">
-                                                        </div>
-                                                        <span class="demo-name">Home Fashion 04</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item">
-                                                    <a href="home-05.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-05.jpg" src="images/demo/home-05.jpg" alt="home-05">
-                                                        </div>
-                                                        <span class="demo-name">Home Fashion 05</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item">
-                                                    <a href="home-06.html">
-                                                        <div class="demo-image position-relative">
-                                                            <img class="lazyload" data-src="images/demo/home-06.jpg" src="images/demo/home-06.jpg" alt="home-06">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Fashion 06</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item position-relative">
-                                                    <a href="home-personalized-pod.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-personalized-pod.jpg" src="images/demo/home-personalized-pod.jpg" alt="home-personalized-pod">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Personalized Pod</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item position-relative">
-                                                    <a href="home-pickleball.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-pickleball.png" src="images/demo/home-pickleball.png" alt="home-pickleball">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Pickleball</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item position-relative">
-                                                    <a href="home-ceramic.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-ceramic.png" src="images/demo/home-ceramic.png" alt="home-ceramic">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Ceramic</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item position-relative">
-                                                    <a href="home-food.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-food.png" src="images/demo/home-food.png" alt="home-food">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Food</span>
-                                                    </a>
-                                                </div>
-                                                <div class="demo-item position-relative">
-                                                    <a href="home-camp-and-hike.html">
-                                                        <div class="demo-image">
-                                                            <img class="lazyload" data-src="images/demo/home-camp-and-hike.png" src="images/demo/home-camp-and-hike.png" alt="home-camp-and-hike">
-                                                            <div class="demo-label">
-                                                                <span class="demo-new">New</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="demo-name">Home Camp And Hike</span>
-                                                    </a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="text-center view-all-demo">
-                                                <a href="home-sneaker.html#modalDemo" data-bs-toggle="modal" class="tf-btn btn-xl btn-fill radius-3 animate-hover-btn fw-6"><span>View all demos (46+)</span><i class="icon icon-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="{{ route('shop.default') }}" class="item-link letter-spacing-3">Shop</a>
                                 </li>
-                                <li class="menu-item">
-                                    <a href="home-sneaker.html#" class="item-link letter-spacing-3">Shop</a>
+                                <li class="menu-item"> 
+                                    <a href="/" class="item-link letter-spacing-3">Men</a>
                                     <div class="sub-menu mega-menu">
                                         <div class="container">
                                             <div class="row">
@@ -279,7 +144,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="home-sneaker.html#" class="item-link letter-spacing-3">Products</a>
+                                    <a href="/" class="item-link letter-spacing-3">Women</a>
                                     <div class="sub-menu mega-menu">
                                         <div class="container">
                                             <div class="row">
@@ -560,7 +425,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-item position-relative">
-                                    <a href="home-sneaker.html#" class="item-link">Pages</a>
+                                    <a href="{{ route('shop.sale.off') }}" class="item-link">Sale off</a>
                                     <div class="sub-menu submenu-default">
                                         <ul class="menu-list">
                                             <li>
@@ -638,7 +503,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-item position-relative">
-                                    <a href="home-sneaker.html#" class="item-link letter-spacing-3">Blog</a>
+                                    <a href="{{ route('blog') }}" class="item-link letter-spacing-3">Blog</a>
                                     <div class="sub-menu submenu-default">
                                         <ul class="menu-list">
                                             <li><a href="blog-grid.html" class="menu-link-text link text_black-2">Grid layout</a></li>
@@ -649,12 +514,12 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="menu-item"><a href="home-sneaker.html#" class="item-link letter-spacing-3">Buy now</a></li>
+                                <li class="menu-item"><a href="{{ route('about.us') }}" class="item-link letter-spacing-3">About us</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-xl-2 col-md-4 col-6 text-center">
-                        <a href="index.html" class="logo-header">
+                        <a href="/" class="logo-header">
                             <img src="images/logo/logo.svg" alt="logo" class="logo">
                         </a>
                     </div>
@@ -662,7 +527,7 @@
                         <ul class="nav-icon d-flex justify-content-end align-items-center gap-20">
                             <li class="nav-search"><a href="home-sneaker.html#canvasSearch" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="nav-icon-item"><i class="icon icon-search"></i></a></li>
                             <li class="nav-account"><a href="home-sneaker.html#login" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-account"></i></a></li>
-                            <li class="nav-wishlist"><a href="wishlist.html" class="nav-icon-item"><i class="icon icon-heart"></i><span class="count-box bg-yellow-9 text_black">0</span></a></li>
+                            {{-- <li class="nav-wishlist"><a href="wishlist.html" class="nav-icon-item"><i class="icon icon-heart"></i><span class="count-box bg-yellow-9 text_black">0</span></a></li> --}}
                             <li class="nav-cart"><a href="home-sneaker.html#shoppingCart" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-bag"></i><span class="count-box bg-yellow-9 text_black">0</span></a></li>
                         </ul>
                     </div>
