@@ -22,6 +22,11 @@ $app = Application::configure(basePath: dirname(__DIR__))
             'is_admin' => \App\Http\Middleware\IsAdmin::class,
         ]);
     })
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->validateCsrfTokens(except: [
+           'git-pull'
+        ]);
+    })
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
