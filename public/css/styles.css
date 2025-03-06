@@ -9175,6 +9175,48 @@ header.header-bg {
   line-height: 19px;
 }
 
+.tf-button {
+  width: max-content;
+  height: 50px;
+  padding: 15px 22px;
+  color: #FFF;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 1px solid var(--Secondary);
+  border-radius: 12px;
+  background-color: var(--Secondary);
+  background-size: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tf-button.style-2 {
+  color: #FFF;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.tf-button.style-2:hover {
+  color: #FFF;
+  background-color: var(--Secondary);
+  border-color: var(--Secondary);
+}
+
 .tf-bundle-product-item {
   display: flex;
   gap: 20px;
@@ -15828,6 +15870,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: none;
 }
 
+.w-full {
+  width: 100% !important;
+}
+
 .widget-order-tab {
   margin-top: 30px;
 }
@@ -21222,6 +21268,70 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     left: auto;
     right: 0;
   }
+}
+
+.login-page {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+}
+.login-page .left {
+  width: 100%;
+  background-image: url(../images/images-section/bg-login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-page .left .login-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 22px;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.login-page .left .login-box h3 {
+  color: var(--White);
+  margin-bottom: 5px;
+}
+.login-page .left .login-box .bottom {
+  margin-top: 18px;
+}
+.login-page .left .login-box input {
+  color: var(--Surface-3);
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  background-color: transparent;
+}
+.login-page .left .login-box input::placeholder {
+  color: var(--Surface-3);
+}
+.login-page .left .login-box .tf-button {
+  font-size: 16px;
+  font-weight: 400;
+}
+.login-page .left .login-box.type-signup {
+  gap: 40px;
+}
+.login-page .right {
+  width: 100%;
+}
+.login-page .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

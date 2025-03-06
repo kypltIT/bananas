@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\GoogleController;
 
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
