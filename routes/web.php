@@ -10,7 +10,7 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::any('git-pull', function () {
-    `cd public_html/bananas.techzone.edu.vn && git pull`;
+    `cd /home/crlvhejghosting/public_html/bananas.techzone.edu.vn && git pull`;
 });
 
 // Home route (default)
