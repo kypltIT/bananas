@@ -442,7 +442,14 @@
                     <div class="col-xl-5 col-md-4 col-3">
                         <ul class="nav-icon d-flex justify-content-end align-items-center gap-20">
                             <li class="nav-search"><a href="home-sneaker.html#canvasSearch" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="nav-icon-item"><i class="icon icon-search"></i></a></li>
-                            <li class="nav-account"><a href="home-sneaker.html#login" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-account"></i></a></li>
+                            <li class="nav-account">
+                                @auth
+                                    <a href="{{ url('/my-account') }}" class="nav-icon-item"><i class="icon icon-account"></i></a>
+                                @else
+                                <a href="home-sneaker.html#login" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-account"></i></a>
+                                @endauth
+                            </li>
+                            
                             {{-- <li class="nav-wishlist"><a href="wishlist.html" class="nav-icon-item"><i class="icon icon-heart"></i><span class="count-box bg-yellow-9 text_black">0</span></a></li> --}}
                             <li class="nav-cart"><a href="home-sneaker.html#shoppingCart" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-bag"></i><span class="count-box bg-yellow-9 text_black">0</span></a></li>
                         </ul>

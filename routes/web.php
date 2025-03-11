@@ -2,10 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\Auth\GoogleController;
 
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
-Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -13,15 +10,23 @@ Route::any('git-pull', function () {
     `cd /home/crlvhejghosting/public_html/bananas.techzone.edu.vn && git pull`;
 });
 
+
 // Home route (default)
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::middleware('auth')->group(function () {
+    Route::get('/my-account', function () {
+        return view('my-account');
+    })->name('my.account');
+});
+
 // Shop page route
 Route::get('/shop-default', function () {
     return view('pages.shop-default');
 })->name('shop.default');
+
 
 // Shop Sale Off page route
 Route::get('/shop-sale-off', function () {
@@ -106,7 +111,9 @@ Route::get('/product/{id}', function ($id) {
 
 // Example: Dashboard route for admins or managers
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth')->name('dashboard');
+    return view('admin.dashboard');
+})->middleware('auth')->name('admin.dashboard');
+
+
 
 require __DIR__.'/admin.php';

@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Foundation\Configuration\Exceptions;
+use App\Http\Middleware\PreventBackHistory;
 
 $app = Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -11,18 +12,6 @@ $app = Application::configure(basePath: dirname(__DIR__))
         health: '/up'
     )
     ->withMiddleware(function (Middleware $middleware) {
-        // Đăng ký middleware hệ thống
-        $middleware->append([
-            \Illuminate\Session\Middleware\StartSession::class,
-            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        ]);
-
-        // Đăng ký middleware định danh (thay vì route)
-        $middleware->alias([
-            'is_admin' => \App\Http\Middleware\IsAdmin::class,
-        ]);
-    })
-    ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
            'git-pull'
         ]);
@@ -30,5 +19,6 @@ $app = Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
+;
 
 return $app;
