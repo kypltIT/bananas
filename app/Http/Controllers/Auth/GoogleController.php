@@ -36,6 +36,6 @@ class GoogleController extends Controller
         }
 
         Auth::login($user);
-        return redirect()->route('dashboard'); // Điều hướng đến trang chính
+        return redirect()->route('/'); // Điều hướng đến trang chính
     }
 }
