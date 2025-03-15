@@ -2,13 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Middleware\RedirectIfAuthenticated;
 
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::middleware([RedirectIfAuthenticated::class])->group(function () {
+    Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+});
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::any('git-pull', function () {
     `cd /home/crlvhejghosting/public_html/bananas.techzone.edu.vn && git pull`;
 });
+
 
 
 // Home route (default)
@@ -18,7 +22,7 @@ Route::get('/', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/my-account', function () {
-        return view('my-account');
+        return view('pages.my-account');
     })->name('my.account');
 });
 
@@ -109,10 +113,7 @@ Route::get('/product/{id}', function ($id) {
     return view('product-details', ['id' => $id]);
 })->name('product.details');
 
-// Example: Dashboard route for admins or managers
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware('auth')->name('admin.dashboard');
+
 
 
 

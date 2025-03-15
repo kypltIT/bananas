@@ -15,7 +15,13 @@ $app = Application::configure(basePath: dirname(__DIR__))
         $middleware->validateCsrfTokens(except: [
            'git-pull'
         ]);
+        $middleware->alias([
+            'checkrole' => \App\Http\Middleware\CheckRole::class,
+        ]);
+    
+        $middleware->append(\App\Http\Middleware\PreventBackHistory::class);
     })
+    
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();

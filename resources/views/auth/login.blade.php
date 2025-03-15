@@ -3,7 +3,7 @@
 @section('title', 'Login')
 
 @section('content')
-{{-- <div class="container">
+    {{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
@@ -33,68 +33,96 @@
     </div>
 </div> --}}
 
-        <!-- page-title -->
-        <div class="tf-page-title style-2">
-            <div class="container-full">
-                <div class="heading text-center">Log in</div>
-            </div>
+    <!-- page-title -->
+    <div class="tf-page-title style-2">
+        <div class="container-full">
+            <div class="heading text-center">Log in</div>
         </div>
-        <!-- /page-title -->
-    
-        <section class="flat-spacing-10">
-            <div class="container">
-                <div class="tf-grid-layout lg-col-2 tf-login-wrap">
-                    <div class="tf-login-form">
-                        <div id="recover">
-                            <h5 class="mb_24">Reset your password</h5>
-                            <p class="mb_30">We will send you an email to reset your password</p>
-                            <div>
-                                <form class="" id="login-form" action="login.html#" method="post" accept-charset="utf-8" data-mailchimp="true">
-                                    <div class="tf-field style-1 mb_15">
-                                        <input class="tf-field-input tf-input" placeholder="" type="email" id="property3" name="email">
-                                        <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
-                                    </div>
-                                    <div class="mb_20">
-                                        <a href="{{ route('login') }}" class="tf-btn btn-line">Cancel</a>
-                                    </div>
-                                    <div class="">
-                                        <button type="submit" class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">Reset password</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div id="login">
-                            <h5 class="mb_36">Log in</h5>
-                            <div>
-                                @if (session('status'))
-                                <div class="alert alert-success">{{ session('status') }}</div>
-                            @endif
-                                <form class="" id="login-form" method="POST" action="{{ route('login') }}" accept-charset="utf-8">
-                                    @csrf
-                                    <div class="tf-field style-1 mb_15">
-                                        <input class="tf-field-input tf-input" placeholder="" type="email" id="property3" name="email">
-                                        <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
-                                    </div>
-                                    <div class="tf-field style-1 mb_30">
-                                        <input class="tf-field-input tf-input" placeholder="" type="password" id="property4" name="password">
-                                        <label class="tf-field-label fw-4 text_black-2" for="property4">Password *</label>
-                                    </div>
-                                    <div class="mb_20">
-                                        <a href="{{ route('login') }}#recover" class="tf-btn btn-line">Forgot your password?</a>
-                                    </div>
-                                    <div class="">
-                                        <button type="submit" class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">Log in</button>
-                                    </div>
-                                </form>
-                            </div>
+    </div>
+    <!-- /page-title -->
+
+    <section class="flat-spacing-10">
+        <div class="container">
+            <div class="tf-grid-layout lg-col-2 tf-login-wrap">
+                <div class="tf-login-form">
+                    <div id="recover">
+                        <h5 class="mb_24">Reset your password</h5>
+                        <p class="mb_30">We will send you an email to reset your password</p>
+                        <div>
+                            <form class="" id="login-form" action="login.html#" method="post" accept-charset="utf-8"
+                                data-mailchimp="true">
+                                <div class="tf-field style-1 mb_15">
+                                    <input class="tf-field-input tf-input" placeholder="" type="email" id="property3"
+                                        name="email">
+                                    <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
+                                </div>
+                                <div class="mb_20">
+                                    <a href="{{ route('login') }}" class="tf-btn btn-line">Cancel</a>
+                                </div>
+                                <div class="">
+                                    <button type="submit"
+                                        class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">Reset
+                                        password</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="tf-login-content">
-                        <h5 class="mb_36">I'm new here</h5>
-                        <p class="mb_20">Sign up for early Sale access plus tailored new arrivals, trends and promotions. To opt out, click unsubscribe in our emails.</p>
-                        <a href="/" class="tf-btn btn-line">Register<i class="icon icon-arrow1-top-left"></i></a>
+                    <div id="login">
+                        <h5 class="mb_36">Log in</h5>
+                        <div>
+                            <form class="" id="login-form" method="POST" action="{{ route('login') }}"
+                                accept-charset="utf-8">
+                                @csrf
+                                <div class="tf-field style-1 mb_15">
+                                    <input class="tf-field-input tf-input" placeholder="" type="email" id="property3"
+                                        name="email" value="{{ old('email') }}" required>
+                                    <label class="tf-field-label fw-4 text_black-2" for="property3"
+                                        value="{{ old('email') }}">Email *</label>
+                                </div>
+                                <div class="tf-field style-1 mb_30">
+                                    <input class="tf-field-input tf-input" placeholder="" type="password" id="property4"
+                                        name="password" required>
+                                    <label class="tf-field-label fw-4 text_black-2" for="property4">Password *</label>
+                                </div>
+                                <div class="mb_20">
+                                    <a href="{{ route('login') }}#recover" class="tf-btn btn-line">Forgot your password?</a>
+                                </div>
+                                <div class="">
+                                    <button type="submit"
+                                        class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center"
+                                        onclick="return validateForm()">Log
+                                        in</button>
+                                </div>
+                            </form>
+                            <script>
+                                function validateForm() {
+                                    let password = document.getElementById("property4").value;
+                                    if (password.length < 6) {
+                                        toastr.error("Password must be at least 6 characters.");
+                                        return false;
+                                    }
+                                    return true;
+                                }
+                            </script>
+                        </div>
                     </div>
                 </div>
+                <div class="tf-login-content">
+                    <h5 class="mb_36">I'm new here</h5>
+                    <p class="mb_20">Sign up for early Sale access plus tailored new arrivals, trends and promotions. To
+                        opt out, click unsubscribe in our emails.</p>
+                    <a href="/" class="tf-btn btn-line">Register<i class="icon icon-arrow1-top-left"></i></a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
 @endsection

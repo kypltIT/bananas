@@ -24,15 +24,15 @@ class AuthController extends Controller
         $user = User::where('email', $request->email)->first();
 
         if (!$user || !Hash::check($request->password, $user->password)) {
-            return back()->withErrors(['email' => 'Invalid credentials.']);
+            return back()->with('error', 'Invalid credentials.')->withInput();
         }
 
         Auth::login($user);
 
         if ($user->role_id === '0865fe87-fd05-11ef-ba53-5811223a0998') {
-            return redirect('/admin/dashboard');
+            return redirect('/admin/dashboard')->with('success', 'Login successful.');
         } else {
-            return redirect('/');
+            return redirect('/')->with('success', 'Login successfully.');
         }
     }
 
@@ -41,7 +41,7 @@ class AuthController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        
-        return redirect('/login')->with('status', 'Logged out successfully.');
+
+        return redirect('/login')->with('success', 'Logged out successfully.');
     }
 }

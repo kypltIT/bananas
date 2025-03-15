@@ -9,8 +9,8 @@ use App\Http\Controllers\Admin\RevenueController;
 use App\Http\Controllers\Admin\SettingsController;
 
 // Group routes under /admin prefix
-Route::prefix('admin')->middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+Route::middleware(['auth', 'checkrole:0865fe87-fd05-11ef-ba53-5811223a0998'])->group(function () {
+    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     
     // Product Routes
     Route::get('/products', [ProductsController::class, 'index'])->name('admin.products.index');
